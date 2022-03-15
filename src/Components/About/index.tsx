@@ -4,14 +4,14 @@ const About = () => {
   return (
     <section className="py-16">
       <div className="container">
-        <div className="flex flex-col max-w-max mx-auto rounded-lg bg-transparent p-0 sm:p-8 sm:bg-stone-50">
-          <h1 className="text-3xl font-bold mb-7 sm:text-4xl">
+        <div className="flex flex-col max-w-max mx-auto rounded-lg bg-transparent p-0 sm:p-8 sm:bg-stone-50 sm:dark:bg-slate-800">
+          <h1 className="text-3xl font-bold mb-7 sm:text-4xl dark:text-slate-200">
             React Recipe App
           </h1>
-          <h2 className="text-amber-500 text-xl font-bold mb-3 sm:text-2xl">
+          <h2 className="text-amber-500 text-xl font-bold mb-3 sm:text-2xl dark:text-slate-200">
             Built with
           </h2>
-          <ul className="text-xl">
+          <ul className="text-xl dark:text-slate-300">
             <li className="mb-1">- React</li>
             <li className="mb-1">- React Router</li>
             <li className="mb-1">- Redux Toolkit(with RTK Query)</li>
@@ -22,7 +22,7 @@ const About = () => {
               -
               <a
                 href="https://mockapi.io/"
-                title="API"
+                title="mockapi"
                 rel="noreferrer noopener"
                 target="_blank"
                 className="pl-1 underline"
@@ -34,7 +34,7 @@ const About = () => {
               -
               <a
                 href="https://www.themealdb.com/"
-                title="API"
+                title="the meal db"
                 rel="noreferrer noopener"
                 target="_blank"
                 className="pl-1 underline"

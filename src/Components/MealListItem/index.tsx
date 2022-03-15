@@ -59,7 +59,7 @@ const MealListItem = ({
       <div className="relative">
         <button
           onClick={updateMeal}
-          className={`group absolute top-3 right-3 z-10 w-10 h-10 inline-flex items-center justify-center p-3 text-amber-500 bg-white rounded-full transition hover:text-amber-500 hover:bg-white ${
+          className={`group absolute top-3 right-3 z-10 w-10 h-10 inline-flex items-center justify-center p-3 text-amber-500 bg-white rounded-full transition hover:text-amber-500 hover:bg-white dark:bg-slate-100 ${
             isFavourite ? "border-2 border-amber-500" : ""
           }`}
           type="button"
@@ -88,16 +88,18 @@ const MealListItem = ({
         </Link>
       </div>
       <Link to={`/meal/${id}`} className="grid">
-        <div className="grid grid-rows-[auto_1fr_auto] relative w-full p-6 -mt-8 bg-white rounded-xl">
-          <h2 className="text-xl font-bold text-gray-900">{name}</h2>
+        <div className="grid grid-rows-[auto_1fr_auto] relative w-full p-6 -mt-8 bg-white rounded-xl dark:bg-slate-800">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-slate-200">
+            {name}
+          </h2>
 
-          <p className="hidden max-h-24 line-clamp-4 mt-2 overflow-y-hidden text-ellipsis text-gray-500 sm:block">
+          <p className="hidden max-h-24 line-clamp-4 mt-2 overflow-y-hidden text-ellipsis text-gray-500 sm:block dark:text-slate-300">
             {instructions}
           </p>
 
           <div className="flex gap-y-3 mt-6 gap-x-6 sm:items-center">
             <div className="flex items-center gap-x-1.5">
-              <span className="w-7 h-7 flex items-center justify-center p-2 flex-shrink-0 text-white bg-green-600 rounded-full">
+              <span className="w-7 h-7 flex items-center justify-center p-2 flex-shrink-0 text-white bg-green-600 rounded-full dark:bg-green-800">
                 <svg
                   className="w-full"
                   fill="currentColor"
@@ -108,12 +110,12 @@ const MealListItem = ({
                 </svg>
               </span>
 
-              <span className="flex space-x-1 space-x-reverse text-sm font-medium text-gray-600 ">
+              <span className="flex space-x-1 space-x-reverse text-sm font-medium text-gray-600 dark:text-slate-300">
                 {country}
               </span>
             </div>
             <div className="flex items-center gap-x-1.5">
-              <span className="w-7 h-7 flex items-center justify-center p-2 flex-shrink-0 text-white bg-orange-600 rounded-full">
+              <span className="w-7 h-7 flex items-center justify-center p-2 flex-shrink-0 text-white bg-orange-600 rounded-full dark:bg-orange-800">
                 <svg
                   className="w-full"
                   fill="currentColor"
@@ -124,7 +126,7 @@ const MealListItem = ({
                 </svg>
               </span>
 
-              <span className="flex space-x-1 space-x-reverse text-sm font-medium text-gray-600 ">
+              <span className="flex space-x-1 space-x-reverse text-sm font-medium text-gray-600 dark:text-slate-300">
                 {category}
               </span>
             </div>

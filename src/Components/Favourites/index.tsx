@@ -13,10 +13,12 @@ const Favourites = () => {
         <div className="container">
           <div className="flex flex-col items-center justify-center gap-y-2 text-2xl font-bold text-gray-800 text-center md:text-3xl">
             <span className="text-red-500">Oops!</span>
-            <p className="mb-6">Your favourite list is empty!</p>
+            <p className="mb-6 dark:text-slate-200">
+              Your favourite list is empty!
+            </p>
             <Link
               to="/"
-              className="px-6 py-2 text-base font-semibold text-red-800 bg-red-100 rounded hover:bg-red-500 hover:text-white md:text-lg"
+              className="px-6 py-2 text-base font-semibold text-red-800 bg-red-100 rounded hover:bg-red-500 hover:text-white dark:bg-red-800 dark:text-slate-200 dark:hover:bg-red-700 md:text-lg"
             >
               Search for meals
             </Link>
@@ -29,7 +31,9 @@ const Favourites = () => {
   return (
     <section className="py-16">
       <div className="container">
-        <h1 className="text-3xl font-bold mb-7 sm:text-4xl">Favourites</h1>
+        <h1 className="text-3xl font-bold mb-7 sm:text-4xl dark:text-slate-200">
+          Favourites
+        </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {error ? (
             <h1 className="text-red-600 text-xl font-bold text-center col-span-full">

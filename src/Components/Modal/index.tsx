@@ -15,10 +15,10 @@ const Modal = () => {
 
   return (
     <>
-      <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+      <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none p-6">
         <div className="relative w-full my-6 mx-auto max-w-sm">
           {/*content*/}
-          <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+          <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none dark:bg-slate-800">
             {/*header*/}
             <div className="text-center rounded-t">
               <img
@@ -29,8 +29,10 @@ const Modal = () => {
             </div>
             {/*body*/}
             <div className="text-center px-6 pb-4 pt-3">
-              <h3 className="text-2xl font-semibold">Your lucky meal is</h3>
-              <h4 className="text-amber-500 text-3xl font-bold">
+              <h3 className="text-2xl font-semibold dark:text-slate-200">
+                Your lucky meal is
+              </h3>
+              <h4 className="text-amber-500 text-3xl font-bold dark:text-slate-200">
                 {modal.name}
               </h4>
             </div>
@@ -45,7 +47,7 @@ const Modal = () => {
               </button>
               <button
                 type="button"
-                className="bg-green-500 text-white hover:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                className="bg-green-500 text-white hover:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 dark:bg-green-800"
                 onClick={seeDetails}
               >
                 See details

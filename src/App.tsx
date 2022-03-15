@@ -14,7 +14,7 @@ function App() {
   const modal = useAppSelector((state) => state.modal)
 
   return (
-    <div className="grid grid-cols-1 grid-rows-[auto_1fr_auto] min-h-screen">
+    <div className="grid grid-cols-1 grid-rows-[auto_1fr_auto] min-h-screen bg-white dark:bg-slate-900">
       <BrowserRouter>
         <Header />
         <main>

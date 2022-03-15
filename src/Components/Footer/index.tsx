@@ -2,18 +2,19 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <footer className="py-4 bg-yellow-300">
-      <div className="container flex flex-wrap justify-center items-center gap-1 text-center">
-        <div className="">React Recipe App. Developed by furip0x.</div>
-        <div className="flex text-gray-500">
+    <footer className="py-4 bg-yellow-300 border-t border-transparent dark:bg-slate-900 dark:border-t-slate-300/10">
+      <div className="container flex flex-wrap justify-center items-center gap-2 text-center">
+        <div className="dark:text-slate-500">
+          React Recipe App. Developed by furip0x.
+        </div>
+        <div className="flex text-slate-500 dark:text-slate-400 dark:hover:text-slate-300">
           <a
-            className="hover:opacity-75"
+            className="hover:opacity-75 dark:hover:opacity-100"
             href="https://github.com/furip0x"
+            title="furip0x GitHub page"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <span className="sr-only">furip0x GitHub </span>
-
             <svg
               className="w-6 h-6"
               fill="currentColor"

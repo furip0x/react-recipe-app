@@ -45,14 +45,16 @@ const Search = () => {
       <section className="pt-16 mx-auto">
         <div className="container">
           <h1 className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-3 text-4xl font-bold md:text-5xl md:leading-tight md:font-extrabold">
-            <span className="text-amber-500">Welcome to</span>
+            <span className="text-amber-500 dark:text-slate-300">
+              Welcome to
+            </span>
             <span className="flex gap-x-1 text-lime-500">
               Free
               <img src={logoIcon} className="w-12" alt="" />
               Meals
             </span>
           </h1>
-          <p className="mb-6 text-lg text-gray-500 text-center md:text-xl md:leading-normal">
+          <p className="mb-6 text-lg text-gray-500 text-center md:text-xl md:leading-normal dark:text-slate-400">
             Free Meals is here to help you cook delicious meals with less stress
             and more joy.
           </p>
@@ -64,7 +66,7 @@ const Search = () => {
                 name="search"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="flex-grow w-full h-12 px-4 transition duration-200 text-gray-500 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green-500 focus:outline-none focus:shadow-outline"
+                className="flex-grow w-full h-12 px-4 transition duration-200 text-gray-500 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green-500 focus:outline-none focus:shadow-outline dark:text-slate-400 dark:focus:text-slate-300 dark:bg-slate-800 dark:border-slate-500/30 dark:focus:border-slate-500"
               />
               {/* <button
                 type="submit"
@@ -74,10 +76,10 @@ const Search = () => {
                 Search
               </button> */}
             </form>
-            <div className="hidden border-r border-gray-200 sm:block"></div>
+            <div className="hidden border-r border-gray-200 sm:block dark:border-slate-600"></div>
             <button
               type="button"
-              className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-56 bg-red-500 hover:bg-red-700 focus:shadow-outline focus:outline-none"
+              className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-56 bg-red-500 hover:bg-red-700 focus:shadow-outline focus:outline-none dark:text-slate-300 dark:bg-slate-700 dark:hover:text-slate-200 dark:hover:bg-slate-600"
               onClick={getRandomMeal}
             >
               I'm feeling lucky
